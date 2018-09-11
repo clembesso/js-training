@@ -158,7 +158,7 @@ the style
 
 ## Automated test
 We recommand to use [Travis](https://travis-ci.org) to automatise the testing phase, allow this repo and add this code in your README
-`[![Build Status](https://travis-ci.org/GITHUB_LOGIN/js-training.svg?branch=master)](https://travis-ci.org/GITHUB_LOGIN/js-training)`
+`[![Build Status](https://travis-ci.org/clembesso/js-training.svg?branch=master)](https://travis-ci.org/clembesso/js-training)`
 by remplacing GITHUB_LOGIN by your github login
 
 ## Contribute
