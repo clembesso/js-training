@@ -10,7 +10,12 @@
  */
 
 // Your code :
-
+function min (number, other){
+    if (number>other){
+        return Math.round(other*10)/10
+    }
+    else return Math.round(number*10)/10
+}
 //* Begin of tests
 const assert = require('assert')
 

@@ -10,7 +10,12 @@
  */
 
 // Your code :
-
+function abs (number){
+    if (number < 0){
+    return Math.round(- number*10)/10
+    }
+    else return Math.round(number*10)/10
+}
 //* Begin of tests
 const assert = require('assert')
 
