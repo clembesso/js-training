@@ -10,66 +10,19 @@
  */
 
 // Your code :
-let result =0
-function multiply (number1, number2){
-    if (number1<number2 && number1>0 && number2>0){
-        let x = 0
-        let result =0
-        while(x<number2){
-        result += number1
-        x++      
-      }
-      return (result)
 
-    }
-    if (number2<number1 && number1>0 && number2>0){
-        let x = 0
-        let result =0
-        while (x<number1){
-        result += number2
-        x++
-        }
-        return (result)
+function multiply(a, b){
+let result = 0;
+if (b>0) {
+    result = a + multiply(a,b-1);
+}  if (b<0){
+    result = -a + multiply (a,b+1);
 
-    }
-    if (number2 ==0 || number1 ==0){
-        return (0)
-    }
-    if (number2==number1){
-        return (number2 + number1)
-    }
-    if (number1<0 && number2<0 && number1>number2){
-        let x = 0
-        let result =0
-        number1 = -number1
-        number2=-number2
-        while(x<number1){
-        result += number2
-        x++    
-      }
-      return (result)
-    }
-    if (number2<0 && number1>0){
-        let x=0
-        let result =0
-        number2 = -number2
-        while (x<number2){
-         result += number1
-         x++   
-        }
-        return (-result)
-    }
-    if (number1<0 && number2>0){
-        let x=0
-        let result =0
-        number1 = -number1
-        while (x<number1){
-         result += number2
-         x++   
-        }
-        return (-result)
-    }
 }
+
+return result;
+}
+
 //* Begin of tests
 const assert = require('assert')
 
